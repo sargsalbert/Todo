@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    background-color: #efefef;
+    font-family: Arial, sans-serif;
+}
+.container{
+    margin: 30px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    max-width: 600px;
+}
+.todo-container{
+    background: white;
+    border: 1px solid #d8d8d8;
+}
+.todo-head{
+    display: flex;
+    padding: 20px;
+}
+.todo-head input{
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid rgba(35, 35, 35, .3);
+    border-right: none;
+    width: 100%;
+    outline: none;
+    box-sizing: border-box;
+    transition: all .3s;
+}
+.todo-head input:hover,
+.todo-head input:focus{
+    border: 1px solid rgba(35, 35, 35, 1);
+}
+.todo-head button{
+    flex-basis: 130px;
+    font-size: 16px;
+    background: #4a90e2;
+    color: white;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: all .3s;
+}
+.todo-head button:hover{
+    background: #3b84d8;
+}
+.todo-container ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.todo-container li{
+    padding: 20px;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo-container li:nth-child(odd) {
+    background: #f4f6fa;
+}
+.close-btn{
+    cursor: pointer;
+    background: url("delete.svg") no-repeat;
+    background-size: contain;
+    height: 20px;
+    width: 20px;
+}
+.todo-head input.error{
+    border-color: red;
+}
